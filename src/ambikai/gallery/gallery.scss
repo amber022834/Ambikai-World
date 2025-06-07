@@ -1,0 +1,32 @@
+@use "../reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap');
+
+#Gallery {
+    padding: 120px 50px;
+    width: 100%;
+    background: var(--white, #FEFCF7);
+}
+
+.Gallery-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(92deg,
+            rgba(234, 232, 232, 0.5) 15.86%,
+            rgba(163, 184, 208, 0.5) 60.02%);
+
+    p {
+        color: #c9bfbb;
+        font-family: "Andika", sans-serif;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.902px;
+    }
+}

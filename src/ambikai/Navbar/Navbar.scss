@@ -1,5 +1,5 @@
 @use "../reset.scss";
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap');
+
 
 #navbarHeader {
   position: fixed;
@@ -99,8 +99,8 @@
       li {
         padding: 0 25px;
 
-        a {
-          font-family: "Noto Sans TC", sans-serif;
+        button {
+          font-family: "Andika", sans-serif;
           font-size: 14px;
           font-weight: 500;
           color: #3a2c19;
@@ -110,6 +110,7 @@
           line-height: 140%;
           /* 19.6px */
           letter-spacing: 1.4px;
+          background-color: transparent;
 
           &::after {
             content: "";

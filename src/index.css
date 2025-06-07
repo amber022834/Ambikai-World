@@ -1,34 +1,34 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-
-  text-decoration: inherit;
+/* 讓 html 和 body 撐滿視窗高度，並允許垂直捲動 */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  overflow-y: auto; 
 }
-
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "Noto Sans TC", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica,
+    Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC",
+    "微軟正黑體", "Microsoft JhengHei", "Dela Gothic One";
+  line-height: 1.5;
+  background-color: #fefcf7;
 }
 
+/* #root 撐滿高度並承接捲動 */
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* 建議設置，視需求決定 */
+}
+
+/* 其他樣式保持不變 */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -37,7 +37,6 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  /* padding: 0.6em 1.2em; */
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -54,20 +53,13 @@ button:focus {
   outline: none;
   box-shadow: none;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-
   button {
     background-color: #f9f9f9;
   }
-}
-
-
-html, body, #root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }

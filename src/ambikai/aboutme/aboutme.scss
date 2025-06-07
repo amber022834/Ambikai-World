@@ -1,0 +1,14 @@
+@use "../reset.scss";
+
+
+#Aboutme {
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px; /* 預留 navbar 高度 */
+    position: relative; /* 為 overlay 定位準備 */
+    color: white; /* 文字顏色，確保看得見 */
+  }
+  
