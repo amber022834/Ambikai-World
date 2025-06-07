@@ -1,4 +1,5 @@
 @use "../reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap');
 
 #navbarHeader {
   position: fixed;
@@ -12,27 +13,27 @@
   background: transparent;
   z-index: 999;
 
-  @media (max-width: 1024px) {
-    top: 0;
-  }
+  // @media (max-width: 1024px) {
+  //   top: 0;
+  // }
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
 
-  @media (max-width: 1024px) {
-    max-width: 100%;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
+  // @media (max-width: 1024px) {
+  //   max-width: 100%;
+  //   padding: 0;
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
 
   #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 24px;
     background-color: rgba(237, 237, 237, 0.6);
@@ -40,13 +41,13 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(12px);
 
-    @media (max-width: 1024px) {
-      width: 100%;
-      padding: 7px 20px;
-      border-radius: 0;
-      background-color: #fff;
-      justify-content: space-between;
-    }
+    // @media (max-width: 1024px) {
+    //   width: 100%;
+    //   padding: 7px 20px;
+    //   border-radius: 0;
+    //   background-color: #fff;
+    //   justify-content: space-between;
+    // }
 
     .logo {
       display: flex;
@@ -55,11 +56,11 @@
       height: 35px;
       margin: 13px;
       font-weight: 400;
-      font-family: "Dela Gothic One";
+      font-family: "Outfit";
 
-      @media (max-width: 1024px) {
-        display: none;
-      }
+      // @media (max-width: 1024px) {
+      //   display: none;
+      // }
 
       .fit {
         font-size: 16px;
@@ -72,13 +73,13 @@
       }
     }
 
-    .mobile-logo {
-      display: none;
+    // .mobile-logo {
+    //   display: none;
 
-      @media (max-width: 1024px) {
-        display: block;
-      }
-    }
+    //   @media (max-width: 1024px) {
+    //     display: block;
+    //   }
+    // }
 
     .menu {
       display: flex;
@@ -86,9 +87,9 @@
       justify-content: space-evenly;
       align-items: center;
 
-      @media (max-width: 1024px) {
-        display: none;
-      }
+      // @media (max-width: 1024px) {
+      //   display: none;
+      // }
 
       ul {
         display: flex;
@@ -147,8 +148,8 @@
   }
 
   .nbr-login {
-    background: #ff8740;
-    color: #FEFCF7;
+    background: #f0d1cc;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,10 +164,6 @@
     height: 40px;
     text-align: center;
     width: 164px;
-
-    @media (max-width: 1024px) {
-      display: none;
-    }
   }
 }
 
@@ -185,15 +182,15 @@
     border: none;
   }
 
-  @media (max-width: 1024px) {
-    display: block;
+  // @media (max-width: 1024px) {
+  //   display: block;
 
-    &:focus {
-      outline: none;
-      box-shadow: none;
+  //   &:focus {
+  //     outline: none;
+  //     box-shadow: none;
 
-    }
-  }
+  //   }
+  // }
 
   &.is-active {
     .bar:nth-child(1) {
@@ -224,9 +221,9 @@
   padding: 0px 24px;
   gap: 80px;
 
-  @media (max-width: 1024px) {
-    display: block;
-  }
+  // @media (max-width: 1024px) {
+  //   display: block;
+  // }
 
   .mobile-title {
     display: flex;
