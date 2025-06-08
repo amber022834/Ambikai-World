@@ -4,6 +4,8 @@ import "./Navbar.scss";
 function Navbar() {
   const navigate = useNavigate();
 
+
+
   return (
     <header id="navbarHeader">
       <div className="container">

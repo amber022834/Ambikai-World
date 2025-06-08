@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Gallery() {
-    // const { id } = useParams();
-    // const article = cardsData.find(card => card.id === id); 
+   
     const navigate = useNavigate();
+    
 
     return (
         <>
@@ -83,18 +83,8 @@ function Gallery() {
                 {/* 換頁區 */}
                 <section>
                     <div classNameName="page-button">
-                       
-                        <div classNameName="bottomcontent">
-                            <div classNameName="hashtag">
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                            </div>
 
-                        </div>
-
+                   
                     </div>
 
                 </section>

@@ -11,29 +11,34 @@ function Footer() {
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 style={{ cursor: 'pointer' }}
             >
-              
+
             </button>
 
-            <div
-                className="footerwrapper"
-                
-              
+            <div className="footerwrapper"
+
+
             >
                 <div className="footer-overlaytext">
                     <div className="footer-columntext">
-                        
+
 
                         <div className="aboutus">
-                            <h4>關於我們</h4>
-                            <p>我們如何運作</p>
-                            <p>聯絡我們</p>
-                            <p>常見問題</p>
+                            <h4>Explore</h4>
+                            <p>關於我</p>
+                            <p>作品集</p>
+                            <p>商品一覽</p>
                         </div>
 
-                        <div className="law">
-                            <h4>條款與條件</h4>
-                            <p>隱私政策</p>
-                            <p>服務條款</p>
+                        <div className="Joinus">
+                            <h4>Join</h4>
+                            <p>會員登入</p>
+                            <p>訂閱說明</p>
+                        </div>
+
+                        <div className="Terms">
+                            <h4>Terms and Conditions</h4>
+                            <p>隱私權和cookies</p>
+                            <p>訂閱說明</p>
                         </div>
                     </div>
 
