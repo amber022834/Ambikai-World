@@ -31,6 +31,13 @@
   //   justify-content: flex-end;
   // }
 
+  .navwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   #navbar {
     display: flex;
     justify-content: center;
@@ -40,133 +47,93 @@
     border-radius: 999px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(12px);
+  }
 
-    // @media (max-width: 1024px) {
-    //   width: 100%;
-    //   padding: 7px 20px;
-    //   border-radius: 0;
-    //   background-color: #fff;
-    //   justify-content: space-between;
-    // }
 
-    .logo {
+
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    white-space: nowrap;
+
+    ul {
       display: flex;
-      align-items: baseline;
-      width: 109px;
-      height: 35px;
-      margin: 13px;
-      font-weight: 400;
-      font-family: "Outfit";
-
-      // @media (max-width: 1024px) {
-      //   display: none;
-      // }
-
-      .fit {
-        font-size: 16px;
-        color: #3a2c19;
-      }
-
-      .navi {
-        font-size: 24px;
-        color: #ff8740;
-      }
+      align-items: center;
     }
 
-    // .mobile-logo {
-    //   display: none;
+    li {
+      padding: 0 25px;
 
-    //   @media (max-width: 1024px) {
-    //     display: block;
-    //   }
-    // }
+      button {
+        font-family: "Andika", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #3a2c19;
+        position: relative;
+        text-align: center;
+        font-style: normal;
+        line-height: 140%;
+        /* 19.6px */
+        letter-spacing: 1.4px;
+        background-color: transparent;
 
-    .menu {
-      display: flex;
-      width: 100%;
-      justify-content: space-evenly;
-      align-items: center;
-
-      // @media (max-width: 1024px) {
-      //   display: none;
-      // }
-
-      ul {
-        display: flex;
-        align-items: center;
-      }
-
-      li {
-        padding: 0 25px;
-
-        button {
-          font-family: "Andika", sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          color: #3a2c19;
-          position: relative;
-          text-align: center;
-          font-style: normal;
-          line-height: 140%;
-          /* 19.6px */
-          letter-spacing: 1.4px;
-          background-color: transparent;
-
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 0%;
-            height: 1px;
-            background-color: #ff8740; // 橘色底線
-            transition: width 0.3s;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0%;
+          height: 1px;
+          background-color: #aaa8a7; // 橘色底線
+          transition: width 0.3s;
 
 
-          }
+        }
 
-          &:hover {
-            color: #FF8740;
-          }
+        &:hover {
+          color: #aaa8a7;
+        }
 
-          &:hover::after {
-            width: 100%;
-          }
+        &:hover::after {
+          width: 100%;
         }
       }
     }
-
-    .menu a.active {
-      color: #FF8740;
-      text-align: center;
-      font-family: "Noto Sans TC";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 150%;
-      letter-spacing: 1.6px;
-    }
   }
 
-  .nbr-login {
-    background: #f0d1cc;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    justify-content: center;
-    border-radius: 20px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
+  .menu a.active {
+    color: #FF8740;
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
     font-style: normal;
     font-weight: 900;
-    line-height: 140%;
-    height: 40px;
-    text-align: center;
-    width: 164px;
+    line-height: 150%;
+    letter-spacing: 1.6px;
   }
 }
+
+.nbr-login {
+  background: #f0d1cc;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 24px;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%;
+  height: 40px;
+  text-align: center;
+  width: 164px;
+}
+
 
 .navbarHamburger {
   cursor: pointer;

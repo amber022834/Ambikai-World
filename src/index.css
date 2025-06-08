@@ -4,12 +4,14 @@
 }
 
 /* 讓 html 和 body 撐滿視窗高度，並允許垂直捲動 */
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; */
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 body {
@@ -19,13 +21,15 @@ body {
     "微軟正黑體", "Microsoft JhengHei", "Dela Gothic One";
   line-height: 1.5;
   background-color: #fefcf7;
+ 
 }
 
 /* #root 撐滿高度並承接捲動 */
 #root {
   width: 100%;
   height: 100%;
-  overflow-y: auto; /* 建議設置，視需求決定 */
+  overflow-y: auto;
+  /* 建議設置，視需求決定 */
 }
 
 /* 其他樣式保持不變 */
@@ -49,6 +53,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 button:focus {
   outline: none;
   box-shadow: none;
@@ -59,7 +64,8 @@ button:focus {
     color: #213547;
     background-color: #ffffff;
   }
+
   button {
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
 }
