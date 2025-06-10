@@ -6,6 +6,7 @@ import Contact from './Contact/Contact';
 import Products from './Products/Products';
 import Gallery from './Gallery/Gallery';
 import Footer from './Footer/Footer';
+// import BacktoTop from '../component/BacktoTop'
 
 
 import ScrollToTop from "../components/ScrollToTop";
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <div className="wrap" >
+      <div className="wrap">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +26,9 @@ function App() {
         </Routes>
         <Footer />
       </div>
+
+      
+      {/* <BacktoTop /> */}
     </>
   );
 }

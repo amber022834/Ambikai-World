@@ -14,15 +14,15 @@ function Gallery() {
             <main id="Gallery">
 
                 {/* <!-- banner區域 --> */}
-                <section classNameName="Gallery-wrapper">
+                <section className="Gallery-wrapper">
 
-                    <div classNameName="Gallery-title">
+                    <div className="Gallery-title">
                         <p>Gallery</p>
                     </div>
                 </section>
 
                 {/* <!-- 作品區 --> */}
-                <section classNameName="Gallery-artworks">
+                <section className="Gallery-artworks">
                     <div className="grid-container">
                         <div className="grid-item-wide">
                             <img src="/Tiger3031.png" alt="" />
@@ -82,7 +82,7 @@ function Gallery() {
 
                 {/* 換頁區 */}
                 <section>
-                    <div classNameName="page-button">
+                    <div className="page-button">
 
                    
                     </div>

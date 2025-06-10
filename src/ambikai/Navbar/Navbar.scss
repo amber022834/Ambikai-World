@@ -1,320 +1,179 @@
-@use "../reset.scss";
-
-
 #navbarHeader {
   position: fixed;
-  // top: 2.5%;
-  // left: 0;
-  // width: 100%;
-  //修改防止動畫跑版(繼旻)
-  top: 25px;
+  top: 0;
   left: 0;
   width: 100vw;
   background: transparent;
   z-index: 999;
-
-  // @media (max-width: 1024px) {
-  //   top: 0;
-  // }
 }
 
 .container {
   width: 100%;
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  // @media (max-width: 1024px) {
-  //   max-width: 100%;
-  //   padding: 0;
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
 
-  .navwrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .logo {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    img {
+      width: 150px;
+      height: auto;
+      display: block;
+    }
   }
 
-  .logo img {
-    width: 150px;  // 或你想要的寬度
-    height: auto;
-    display: block; // 去除 inline 預設的底部間隙
-  }
-  
-
-  #navbar {
+  .rightControls {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 24px;
-    background-color: rgba(237, 237, 237, 0.6);
-    border-radius: 999px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(12px);
-  }
+    gap: 12px;
 
+    .menu-toggle-button {
+      background: #dacac1;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      color: #3a2c19;
+      transition: background 0.3s ease, color 0.3s ease;
 
-
-  .menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    white-space: nowrap;
-
-    ul {
-      display: flex;
-      align-items: center;
+      &.open {
+        background: #d4a990;
+        color: white;
+      }
     }
 
-    li {
-      padding: 0 25px;
+    .navbar-menu {
+      position: absolute;
+      top: 0px;
+      right: 250px; // 靠右邊，跟 login 鈕有間距
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      z-index: 999;
+      padding: 0;
 
-      button {
-        font-family: "Andika", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-        color: #3a2c19;
-        position: relative;
-        text-align: center;
-        font-style: normal;
-        line-height: 140%;
-        /* 19.6px */
-        letter-spacing: 1.4px;
-        background-color: transparent;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
 
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -3px;
-          left: 0;
-          width: 0%;
-          height: 1px;
-          background-color: #aaa8a7; // 橘色底線
-          transition: width 0.3s;
+      li {
+        overflow: hidden;
 
-
-        }
-
-        &:hover {
-          color: #8a867f;
+        .menu-link {
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          padding: 12px 24px;
           font-size: 16px;
-          
+          font-family: "Noto Sans TC", sans-serif;
+          color: #3a2c19;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          text-align: center;
+          white-space: nowrap;
+          overflow: visible;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 110px;
+            aspect-ratio: 108 / 50;
+            background-image: url('../../../public/Cloud-menu.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            opacity: 1;
+            z-index: -1;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%);
+          }
+
+          &:hover {
+            color: transparent;
+            background: linear-gradient(270deg, #ddcda2, #8fafc9, #cca59b, #d1c9c9);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 5s ease infinite;
+          }
         }
 
-        &:hover::after {
-          width: 100%;
+        @keyframes gradientShift {
+          0% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+
+          100% {
+            background-position: 0% 50%;
+          }
         }
+
+
+
+
+
+      }
+    }
+
+    .nbr-login {
+      background: #f0d1cc;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 24px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 140%;
+      height: 30px;
+      text-align: center;
+      width: 164px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        text-shadow:
+          -1px -1px 0 #b4ada3,
+          1px -1px 0 #c6b8a8,
+          -1px 1px 0 #c6b8a8,
+          1px 1px 0 #c6b8a8;
+        box-shadow: 0px 3px 3px 0px #b39a97;
       }
     }
   }
-
-  .menu a.active {
-    color: #f0a579;
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 150%;
-    letter-spacing: 1.6px;
-  }
 }
 
-.nbr-login {
-  background: #f0d1cc;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 24px;
-  justify-content: center;
-  border-radius: 20px;
-  font-size: 14px;
-  letter-spacing: 1.4px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 140%;
-  height: 30px;
-  text-align: center;
-  width: 164px;
-
-  &:hover{
-    
-    transform: scale(1.05); /* 稍微放大 5% */
-      text-shadow:
-        -1px -1px 0 #b4ada3,  /* 原 #6e6b66 → 淺灰米 */
-         1px -1px 0 #c6b8a8,  /* 原 #3A2C19 → 淺棕米 */
-        -1px  1px 0 #c6b8a8,
-         1px  1px 0 #c6b8a8;
-         box-shadow: 0px 3px 3px 0px #b39a97;
-  }
-}
-
-
-.navbarHamburger {
-  cursor: pointer;
-  background-color: transparent;
-  display: none;
-
-  .bar {
-    display: block;
-    width: 24px;
-    height: 3px;
-    background-color: black;
-    margin: 5px auto;
-    transition: all 0.3s ease;
-    border: none;
-  }
-
-  // @media (max-width: 1024px) {
-  //   display: block;
-
-  //   &:focus {
-  //     outline: none;
-  //     box-shadow: none;
-
-  //   }
-  // }
-
-  &.is-active {
-    .bar:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -6px);
-    }
-  }
-}
-
-// .mobile-menu {
-//   display: none;
-//   position: fixed;
-//   flex-direction: column;
-//   top: 0;
-//   left: 100%;
-//   width: 100%;
-//   height: 100vh;
-//   background: #fff;
-//   transition: left 0.3s ease-in-out;
-//   z-index: 998;
-//   padding: 0px 24px;
-//   gap: 80px;
-
-//   // @media (max-width: 1024px) {
-//   //   display: block;
-//   // }
-
-//   .mobile-title {
-//     display: flex;
-//     width: 100%;
-//     justify-content: space-between;
-//     height: 8%;
-//     padding: 6px;
-
-//     img {
-//       height: auto;
-//       width: auto;
-
-//     }
-
-//     .mobile-close {
-//       background-color: transparent;
-//       padding: 0px;
-
-//       &:focus {
-//         outline: none;
-//         box-shadow: none;
-
-//       }
-//     }
-//   }
-
-//   .mobile-login {
-//     display: flex;
-//     padding: 10px;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 10px;
-//     align-self: stretch;
-//     border-radius: 8px;
-//     background: #FF8740;
-//     width: 100%;
-//     color: #fff;
-//     margin-top: 80px;
-
-//   }
-
-
-//   ul {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 36px;
-
-//     li a {
-//       color: #3A2C19;
-//       font-family: "Noto Sans TC";
-//       font-size: 20px;
-//       font-style: normal;
-//       font-weight: 700;
-//       line-height: normal;
-//       letter-spacing: 2px;
-//     }
-//   }
-
-//   &.show {
-//     left: 0;
-//   }
-// }
-
-//防止出現水平卷軸
-html,
-body {
-  overflow-x: hidden;
-}
-
-.menu-link {
-  position: relative;
-  color: #3a2c19;
-  padding: 8px 16px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  overflow: hidden;
-  transition: color 0.5s ease;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 200%;
-    height: 100%;
-    background:
-      radial-gradient(circle 60px at 30% 50%, rgba(201, 168, 148, 0.5), transparent 80%),
-      radial-gradient(circle 40px at 70% 50%, rgba(255, 183, 71, 0.4), transparent 80%);
-    filter: blur(10px);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-
-  &:hover {
-    color: white;
-
-    &::before {
-      opacity: 1;
-      animation: watercolorSwipe 1s forwards;
-    }
+/* SlideIn 動畫 */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -323,12 +182,21 @@ body {
     left: -150%;
     opacity: 0;
   }
+
   50% {
     left: 0%;
     opacity: 1;
   }
+
   100% {
     left: 100%;
     opacity: 0;
+  }
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
