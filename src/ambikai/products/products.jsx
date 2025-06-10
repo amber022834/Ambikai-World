@@ -1,18 +1,27 @@
+
+import "./Products.scss";
+
 function Products() {
   return (
     <>
-      {/* <!-- banner區域 --> */}
-      <section className="Products-wrapper">
+      <main id="Products">
+        {/* <!-- banner區域 --> */}
+        <section className="Products-wrapper">
 
-        <div className="Products-title">
-          <p>Products</p>
-        </div>
-      </section>
+          <div className="Products-title">
+            <p>Products</p>
+          </div>
+        </section>
 
-       {/* <!-- 作品區 --> */}
-       <section>
-        
-       </section>
+        {/* <!-- 作品區 --> */}
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+
+        </section>
+      </main>
+
     </>
   );
 }
