@@ -31,37 +31,37 @@ function Navbar() {
           {isMenuOpen && (
             <nav className="navbar-menu cloud-bg">
               <ul>
-                <li style={{ animationDelay: '0.1s' }}>
+                <li >
                   <button
                     className="menu-link"
                     onClick={() => handleNavigate("/Aboutme")}
-                    
+
                   >
-                    About me
+                    <span>關於我</span>
                   </button>
                 </li>
-                <li style={{ animationDelay: '0.2s' }}>
+                <li >
                   <button
                     className="menu-link"
                     onClick={() => handleNavigate("/Gallery")}
                   >
-                    Gallery
+                    <span>作品集</span>
                   </button>
                 </li>
-                <li style={{ animationDelay: '0.3s' }}>
+                <li >
                   <button
                     className="menu-link"
                     onClick={() => handleNavigate("/Products")}
                   >
-                    Products
+                    <span> 商品</span>
                   </button>
                 </li>
-                <li style={{ animationDelay: '0.4s' }}>
+                <li >
                   <button
                     className="menu-link"
                     onClick={() => handleNavigate("/Contact")}
                   >
-                    Contact
+                    <span>聯絡</span>
                   </button>
                 </li>
               </ul>

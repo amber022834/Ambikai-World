@@ -160,7 +160,7 @@ a {
     background-repeat: no-repeat;
     z-index: 1;
     background-position: top center;
-    background-image: url('/footer.png');
+    background-image: url('/footer-2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -206,7 +206,7 @@ a {
 .footer-overlaytext h4 {
     color: var(--white, var(--white, #FEFCF7));
     text-align: center;
-    font-family: "Noto Sans TC";
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
@@ -231,7 +231,7 @@ a {
     margin: 0 auto;
     bottom: 2%;
     color: #5c585396;
-    font-family: Sono;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -264,7 +264,7 @@ a {
     p {
         color: var(--primary, var(--primary, #FF8740));
         /* 段落/16 */
-        font-family: "Noto Sans TC", "Sans TC", sans-serif;
+        font-family: "Noto Sans TC", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;

@@ -42,7 +42,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="copyright">Copyright © 2025 FITNAVI All rights reserved.</div>
+                    <div className="copyright">Copyright © 2025Ambikai</div>
                 </div>
             </div>
         </section>

@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background: transparent;
   z-index: 999;
 }
@@ -73,57 +73,90 @@
       li {
         overflow: hidden;
 
-.menu-link {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-family: "Noto Sans TC", sans-serif;
-  color: #3a2c19;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
+        .menu-link {
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-family: "Noto Sans TC", sans-serif;
+          color: #4e483f;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          text-align: center;
+          white-space: nowrap;
+          overflow: visible;
 
-  opacity: 0;
-  transform: translateX(50px);
-  animation: slideIn 1s ease-out forwards;
-  animation-delay: var(--delay, 0s);
+          /* 進場動畫 */
+          opacity: 0;
+          transform: translateX(50px);
+          animation: slideIn 0.8s ease-out forwards;
+          animation-delay: var(--delay, 0s);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 110px;
-    aspect-ratio: 108 / 50;
-    background-image: url('../../../public/Cloud-menu.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    opacity: 1;
-    z-index: -1;
-    transition: all 0.3s ease;
-    transform: translate(-50%, -50%);
-  }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 110px;
+            aspect-ratio: 108 / 50;
+            background-image: url('../../../public/Cloud-menu.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            opacity: 1;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            transform: translate(-50%, -50%);
+          }
 
-  &:hover {
-    color: transparent;
-    background: linear-gradient(270deg, #ddcda2, #8fafc9, #cca59b, #d1c9c9);
-    background-size: 600% 600%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 5s ease infinite;
-  }
-}
+          /* 文字容器 */
+          span {
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+          }
 
+          &:hover {
 
+            /* 文字漸層效果 */
+            span {
+              background: linear-gradient(270deg,
+                  #ddcda2,
+                  #8fafc9,
+                  #ccbb9b,
+                  #d1c9c9);
+              background-size: 600% 600%;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              animation: gradientShift 3s ease infinite;
+            }
+          }
+        }
+
+        /* SlideIn 動畫 */
+        @keyframes slideIn {
+          0% {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+
+          60% {
+            opacity: 0.6;
+            transform: translateX(10px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        /* 漸層移動動畫 */
         @keyframes gradientShift {
           0% {
             background-position: 0% 50%;
@@ -137,7 +170,6 @@
             background-position: 0% 50%;
           }
         }
-
 
 
 
@@ -177,36 +209,36 @@
 
 
 
-@keyframes watercolorSwipe {
-  0% {
-    left: -150%;
-    opacity: 0;
-  }
+// @keyframes watercolorSwipe {
+//   0% {
+//     left: -150%;
+//     opacity: 0;
+//   }
 
-  50% {
-    left: 0%;
-    opacity: 1;
-  }
+//   50% {
+//     left: 0%;
+//     opacity: 1;
+//   }
 
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
+//   100% {
+//     left: 100%;
+//     opacity: 0;
+//   }
+// }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
+// @keyframes slideIn {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(50px);
+//   }
 
-  60% {
-    opacity: 0.6;
-    transform: translateX(10px);
-  }
+//   60% {
+//     opacity: 0.6;
+//     transform: translateX(10px);
+//   }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
