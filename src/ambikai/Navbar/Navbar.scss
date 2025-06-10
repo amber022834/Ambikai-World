@@ -73,50 +73,56 @@
       li {
         overflow: hidden;
 
-        .menu-link {
-          position: relative;
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          width: 110px;
-          padding: 12px 24px;
-          font-size: 16px;
-          font-family: "Noto Sans TC", sans-serif;
-          color: #3a2c19;
-          border: none;
-          background-color: transparent;
-          cursor: pointer;
-          text-align: center;
-          white-space: nowrap;
-          overflow: visible;
+.menu-link {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #3a2c19;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
 
-          &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 110px;
-            aspect-ratio: 108 / 50;
-            background-image: url('../../../public/Cloud-menu.png');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            opacity: 1;
-            z-index: -1;
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-          }
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: var(--delay, 0s);
 
-          &:hover {
-            color: transparent;
-            background: linear-gradient(270deg, #ddcda2, #8fafc9, #cca59b, #d1c9c9);
-            background-size: 600% 600%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 5s ease infinite;
-          }
-        }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    aspect-ratio: 108 / 50;
+    background-image: url('../../../public/Cloud-menu.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 1;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    color: transparent;
+    background: linear-gradient(270deg, #ddcda2, #8fafc9, #cca59b, #d1c9c9);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease infinite;
+  }
+}
+
 
         @keyframes gradientShift {
           0% {
@@ -169,13 +175,7 @@
   }
 }
 
-/* SlideIn 動畫 */
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
 
 @keyframes watercolorSwipe {
   0% {
@@ -194,9 +194,19 @@
   }
 }
 
-@keyframes fadeSlideIn {
-  to {
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  60% {
+    opacity: 0.6;
+    transform: translateX(10px);
+  }
+
+  100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }

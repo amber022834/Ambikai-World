@@ -34,7 +34,8 @@ function Navbar() {
                 <li style={{ animationDelay: '0.1s' }}>
                   <button
                     className="menu-link"
-                    onClick={() => handleNavigate("/Aboutme")}   
+                    onClick={() => handleNavigate("/Aboutme")}
+                    
                   >
                     About me
                   </button>

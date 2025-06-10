@@ -3,13 +3,12 @@ import Navbar from "./Navbar/Navbar";
 import Home from "./Home/Home";
 import Aboutme from './Aboutme/Aboutme';
 import Contact from './Contact/Contact';
-import Products from './Products/Products';
 import Gallery from './Gallery/Gallery';
+import Products from './Products/Products';
 import Footer from './Footer/Footer';
+import ScrollToTop from "../component/ScrollToTop";
 // import BacktoTop from '../component/BacktoTop'
 
-
-import ScrollToTop from "../components/ScrollToTop";
 
 function App() {
   return (
@@ -22,6 +21,7 @@ function App() {
           <Route path="/Aboutme" element={<Aboutme />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Products" element={<Products />} />
           <Route path="/Products" element={<Products />} />
         </Routes>
         <Footer />
