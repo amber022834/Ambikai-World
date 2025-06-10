@@ -64,7 +64,7 @@ function Navbar() {
                 </li>
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Contact")}>
-                    <span>聯絡</span>
+                    <span>日常</span>
                   </button>
                 </li>
               </ul>
@@ -76,7 +76,7 @@ function Navbar() {
             className="nbr-login"
             onClick={() => navigate("/MemberLogin")}
           >
-            Log in
+            Contact
           </button>
         </div>
       </div>

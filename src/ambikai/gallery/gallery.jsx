@@ -12,6 +12,10 @@ function Gallery() {
         <>
 
             <main id="Gallery">
+                <div className="floatingCircle">
+                <img src="/circle.png" alt="" />
+                </div>
+                
 
                 {/* <!-- banner區域 --> */}
                 <section className="Gallery-wrapper">

@@ -12,6 +12,7 @@ body,
   padding: 0;
   /* overflow-x: hidden; */
   overflow-y: auto;
+
 }
 
 body {
@@ -20,8 +21,8 @@ body {
     Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC",
     "微軟正黑體", "Microsoft JhengHei", "Dela Gothic One";
   line-height: 1.5;
-  background-color: #fefcf7;
- 
+  /* background-color:rgb(245, 237, 220); */
+
 }
 
 /* #root 撐滿高度並承接捲動 */
@@ -59,7 +60,7 @@ button:focus {
   box-shadow: none;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -68,4 +69,4 @@ button:focus {
   button {
     background-color: transparent;
   }
-}
+} */
