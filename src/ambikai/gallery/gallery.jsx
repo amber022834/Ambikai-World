@@ -1,7 +1,6 @@
 import "./Gallery.scss";
-
 import { useNavigate } from 'react-router-dom';
-
+import Footer from '../Footer/Footer'
 
 function Gallery() {
 
@@ -36,27 +35,27 @@ function Gallery() {
                         <div className="grid-item-wide">
                             <img src="/Tiger3031.png" alt="" />
                             <div className="overlay">
-                                <div className="title">金油沉香</div>
+                                <div className="title">稻埕X虎</div>
                             </div>
                         </div>
 
                         <div className="grid-item">
                             <img src="/Hualien.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">起星談</div>
                             </div></div>
 
                         <div className="grid-item">
                             <img src="/Papaya.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">瓜埕囝</div>
                             </div>
                         </div>
 
                         <div className="grid-item-wide">
                             <img src="/Sea67.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">觀外埕</div>
                             </div>
                         </div>
 
@@ -64,7 +63,7 @@ function Gallery() {
                         <div className="grid-item">
                             <img src="/Thailand.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">泰皇宮</div>
                             </div>
                         </div>
 
@@ -72,7 +71,7 @@ function Gallery() {
                         <div className="grid-item">
                             <img src="/Car.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">嘟嘟嘟</div>
                             </div>
                         </div>
 
@@ -80,7 +79,7 @@ function Gallery() {
                         <div className="grid-item">
                             <img src="/Food.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">泰饞記</div>
                             </div>
                         </div>
 
@@ -98,6 +97,8 @@ function Gallery() {
 
                 </section>
             </main >
+
+            <Footer />
 
         </>
     )

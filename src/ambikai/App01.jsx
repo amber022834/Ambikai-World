@@ -5,7 +5,7 @@ import Aboutme from './Aboutme/Aboutme';
 import Contact from './Contact/Contact';
 import Gallery from './Gallery/Gallery';
 import Products from './Products/Products';
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 import ScrollToTop from "../component/ScrollToTop";
 // import BacktoTop from '../component/BacktoTop'
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/Products" element={<Products />} />
         </Routes>
-        <Footer />
+    
       </div>
 
       
