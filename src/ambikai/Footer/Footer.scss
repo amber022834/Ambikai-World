@@ -101,7 +101,7 @@ body {
     ;
     font-size: 100%;
     line-height: 1.5;
-    min-height: 100vh; 
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -149,7 +149,7 @@ a {
 }
 
 .footerwrapper {
-   
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -174,7 +174,7 @@ a {
     position: absolute;
     bottom: -20%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0px;
-  
+
 }
 
 .footer-overlaytext h4 {
@@ -212,7 +212,7 @@ a {
     font-weight: 900;
     line-height: 45px;
     white-space: nowrap;
-   
+
 }
 
 .footer-overlaytext p {
@@ -391,7 +391,7 @@ a {
 }
 
 .footerwrapper {
-   
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -403,7 +403,7 @@ a {
     z-index: 1;
     background-position: top center;
     background-image: url('/footer-2.png');
-    
+
 }
 
 
@@ -438,7 +438,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0px;
-  
+
 }
 
 .footer-overlaytext h4 {
@@ -450,7 +450,7 @@ a {
     font-weight: 900;
     line-height: 45px;
     white-space: nowrap;
-   
+
 }
 
 .footer-overlaytext p {
@@ -480,7 +480,8 @@ a {
 
 .Back-to-top-button {
     cursor: pointer;
-    background-image: url('/fox.png'); /* 相對於網站根目錄的路徑 */
+    background-image: url('/fox.png');
+    /* 相對於網站根目錄的路徑 */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -490,54 +491,133 @@ a {
     right: -85%;
     top: 100px;
     z-index: 10;
+
+    // .chatbubble {
+    //     position: absolute;
+    //     right: 10rem;
+    //     top: 0rem;
+    //     // width: 120px;
+    //     // height: 90px;
+    //     // padding: 24px;
+    //     // border-radius: 50%; /* 圓形外觀 */
+    //     // background-color: #fffcf2;
+    //     // border: 2px solid #96928d;
+    //     // color: #58524f;
+    //     // font-size: 16px;
+    //     // line-height: 1.4;
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: center;
+    //     // text-align: center;
+    //     // white-space: nowrap;
+    //     // box-sizing: border-box;
+    // }
     
-
-    // /* 新增漂浮動畫 */
-    // animation: float 2s ease-in-out infinite; /* 動畫名稱、持續時間、時間函數、無限次重複 */
-
-    // @media (max-width: 1024px) {
-    //     left: 80% !important;
+    // // .chatbubble::after {
+    // //     content: "";
+    // //     position: absolute;
+    // //     bottom: 10px; /* 移到右側 */
+    // //     right: -10px; /* 移到右側 */
+    // //     width: 0;
+    // //     height: 0;
+    // //     border-top: 10px solid transparent;
+    // //     border-bottom: 10px solid transparent;
+    // //     border-left: 10px solid #96928d; /* 外框色（底層箭頭） */
+    // //     z-index: 0;
+    // // }
+    
+    // .chatbubble::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 11px; /* 移到右側 */
+    //     right: -9px; /* 移到右側 */
+    //     width: 0;
+    //     height: 0;
+    //     border-top: 9px solid transparent;
+    //     border-bottom: 9px solid transparent;
+    //     border-left: 9px solid #fffcf2; /* 泡泡背景色（上層箭頭） */
+    //     z-index: 1;
     // }
 
-    // &:hover {
-    //     border: none;
-    // }
+    .chatbubble {
+        background-image: url('/chat-bubble.png'); // ✅ 正確路徑
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scaleX(-1);
+        position: absolute;
+        right: 10rem;
+        top: -2rem;
+      
+        width: 120px;
+        height: 120px;
+      
+        display: flex; // ✅ 讓文字置中
+        align-items: center;
+        justify-content: center;
+      
+        color: #58524f;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
 
-    // p {
-    //     color: var(--primary, var(--primary, #FF8740));
-    //     /* 段落/16 */
-    //     font-family: "Noto Sans TC", sans-serif;
-    //     font-size: 16px;
-    //     font-style: normal;
-    //     font-weight: 500;
-    //     line-height: 150%;
-    //     /* 24px */
-    //     letter-spacing: 1.6px;
-    //     margin-bottom: 0px;
+        span{
+            transform: scaleX(-1);
+            text-align: center;
+        }
+      }
+      
 
-    //     &::before,
-    //     &::after {
-    //         content: "";
-    //         position: absolute;
-    //         top: 50%;
-    //         width: 40px;
-    //         height: 2px;
-    //         background-color: #FF8740;
-    //         pointer-events: none;
-    //     }
 
-    //     &::before {
-    //         right: 60%;
-    //         top: 30px;
-    //         transform: rotate(45deg);
-    //     }
 
-    //     &::after {
-    //         right: 20%;
-    //         top: 30px;
-    //         transform: rotate(135deg);
-    //     }
-    // }
+    /* 新增漂浮動畫 */
+    animation: float 2s ease-in-out infinite;
+    /* 動畫名稱、持續時間、時間函數、無限次重複 */
+
+    @media (max-width: 1024px) {
+        left: 80% !important;
+    }
+
+    &:hover {
+        border: none;
+    }
+
+    p {
+        color: var(--primary, var(--primary, #FF8740));
+        /* 段落/16 */
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 24px */
+        letter-spacing: 1.6px;
+        margin-bottom: 0px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 2px;
+            background-color: #FF8740;
+            pointer-events: none;
+        }
+
+        &::before {
+            right: 60%;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            right: 20%;
+            top: 30px;
+            transform: rotate(135deg);
+        }
+    }
 }
 
 .Back-to-top-button:focus {
@@ -547,14 +627,19 @@ a {
 }
 
 /* 定義漂浮動畫 */
-// @keyframes float {
-//     0% {
-//         transform: translateY(0px); /* 初始位置 */
-//     }
-//     50% {
-//         transform: translateY(-30px); /* 向上漂浮 15px */
-//     }
-//     100% {
-//         transform: translateY(0px); /* 回到初始位置 */
-//     }
-// }
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+        /* 初始位置 */
+    }
+
+    50% {
+        transform: translateY(-30px);
+        /* 向上漂浮 15px */
+    }
+
+    100% {
+        transform: translateY(0px);
+        /* 回到初始位置 */
+    }
+}

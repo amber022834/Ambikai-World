@@ -6,6 +6,7 @@ function Footer() {
 
     return (
         <section id="footer">
+
             <button
                 className="Back-to-top-button"
                 onClick={() => {
@@ -16,7 +17,9 @@ function Footer() {
                 }}
                 style={{ cursor: 'pointer' }}
             >
-                <p>回到頂部</p>
+                <div className="chatbubble">
+                    <span>回頂部！</span>
+                </div>
             </button>
 
             <div className="footerwrapper"
