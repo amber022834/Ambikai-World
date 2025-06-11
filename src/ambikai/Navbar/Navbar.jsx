@@ -47,11 +47,11 @@ function Navbar() {
           {isMenuOpen && (
             <nav className="navbar-menu cloud-bg">
               <ul>
-                <li>
+                {/* <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Aboutme")}>
                     <span>關於我</span>
                   </button>
-                </li>
+                </li> */}
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Gallery")}>
                     <span>作品集</span>
@@ -59,12 +59,12 @@ function Navbar() {
                 </li>
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Products")}>
-                    <span>商品</span>
+                    <span>旅繪筆記</span>
                   </button>
                 </li>
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Contact")}>
-                    <span>日常</span>
+                    <span>聯絡我</span>
                   </button>
                 </li>
               </ul>
@@ -76,7 +76,7 @@ function Navbar() {
             className="nbr-login"
             onClick={() => navigate("/MemberLogin")}
           >
-            Contact
+            Subscribe
           </button>
         </div>
       </div>
