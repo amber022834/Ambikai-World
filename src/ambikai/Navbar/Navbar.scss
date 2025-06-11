@@ -1,3 +1,5 @@
+@use "../reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Iansui&family=Klee+One&family=Outfit:wght@100..900&family=Playpen+Sans:wght@100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Dirt&family=Zen+Kurenaido&display=swap');
 
 
 #navbarHeader {
@@ -13,7 +15,7 @@
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -27,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
 
-  
+
 
 
   .logo {
@@ -84,7 +86,8 @@
       }
 
       li {
-        overflow: visible; /* 改成 visible */
+        overflow: visible;
+        /* 改成 visible */
 
         .menu-link {
           position: relative;
@@ -94,47 +97,53 @@
           width: 110px;
           padding: 12px 24px;
           font-size: 16px;
-          font-family: "Noto Sans TC", sans-serif;
-          color: #4e483f;
+          
+          color: #656565;
           border: none;
           background-color: transparent;
           cursor: pointer;
           text-align: center;
           white-space: nowrap;
           overflow: visible;
-        
+
           /* 進場動畫 */
           opacity: 0;
           transform: translateX(50px);
           animation: slideIn 0.8s ease-out forwards;
           animation-delay: var(--delay, 0s);
-        
+
           &::before {
             content: "";
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 100px; /* 原圖寬度 */
-            height: 66px; /* 原圖高度 */
+            width: 100px;
+            /* 原圖寬度 */
+            height: 66px;
+            /* 原圖高度 */
             background-image: url('../../../public/Cloud-menu.png');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size: 100% 100%; /* 移除這行，讓圖片以原始尺寸顯示 */
+            background-size: 100% 100%;
+            /* 移除這行，讓圖片以原始尺寸顯示 */
             /* 或者完全不設定 background-size */
             opacity: 1;
             z-index: -1;
             transition: opacity 0.3s ease;
             transform: translate(-50%, -50%);
           }
-        
+
           /* 文字容器 */
           span {
             position: relative;
             z-index: 1;
             transition: all 0.3s ease;
+            font-family: "Overpass Mono", sans-serif; 
+            font-weight: 400;
           }
-        
+
           &:hover {
+
             /* 文字漸層效果 */
             span {
               background: linear-gradient(270deg,
@@ -255,4 +264,3 @@
 //     transform: translateX(0);
 //   }
 // }
-

@@ -13,7 +13,9 @@ function Home() {
 
             <main id="card9">
 
-
+                <div className="floatingCircle">
+                    <img src="/circle.png" alt="" />
+                </div>
 
 
                 {/* <!-- banner區域 --> */}

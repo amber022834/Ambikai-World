@@ -8,10 +8,15 @@ function Footer() {
         <section id="footer">
             <button
                 className="Back-to-top-button"
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onClick={() => {
+                    const root = document.getElementById('root');
+                    if (root) {
+                        root.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                }}
                 style={{ cursor: 'pointer' }}
             >
-
+                <p>回到頂部</p>
             </button>
 
             <div className="footerwrapper"

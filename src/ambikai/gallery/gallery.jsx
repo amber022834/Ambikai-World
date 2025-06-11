@@ -12,9 +12,7 @@ function Gallery() {
         <>
 
             <main id="Gallery">
-                <div className="floatingCircle">
-                <img src="/circle.png" alt="" />
-                </div>
+               
                 
 
                 {/* <!-- banner區域 --> */}
@@ -31,7 +29,7 @@ function Gallery() {
                         <div className="grid-item-wide">
                             <img src="/Tiger3031.png" alt="" />
                             <div className="overlay">
-                                <div className="title">作品名稱</div>
+                                <div className="title">金油沉香</div>
                             </div>
                         </div>
 
