@@ -33,7 +33,7 @@ function Gallery() {
                 <section className="Gallery-artworks">
                     <div className="grid-container">
                         <div className="grid-item-wide">
-                            <img src="./Tiger3031.png" alt="" />
+                            <img src="./images/Tiger3031.png" alt="" />
 
                             <div className="overlay">
                                 <div className="title">稻埕X虎</div>
@@ -41,20 +41,20 @@ function Gallery() {
                         </div>
 
                         <div className="grid-item">
-                            <img src="./Hualien.png" alt="" />
+                            <img src="./images/Hualien.png" alt="" />
                             <div className="overlay">
                                 <div className="title">起星談</div>
                             </div></div>
 
                         <div className="grid-item">
-                            <img src="./Papaya.png" alt="" />
+                            <img src="./images/Papaya.png" alt="" />
                             <div className="overlay">
                                 <div className="title">瓜埕囝</div>
                             </div>
                         </div>
 
                         <div className="grid-item-wide">
-                            <img src="./Sea67.png" alt="" />
+                            <img src="./images/Sea67.png" alt="" />
                             <div className="overlay">
                                 <div className="title">觀外埕</div>
                             </div>
@@ -62,7 +62,7 @@ function Gallery() {
 
 
                         <div className="grid-item">
-                            <img src="./Thailand.png" alt="" />
+                            <img src="./images/Thailand.png" alt="" />
                             <div className="overlay">
                                 <div className="title">泰皇宮</div>
                             </div>
@@ -70,7 +70,7 @@ function Gallery() {
 
 
                         <div className="grid-item">
-                            <img src="./Car.png" alt="" />
+                            <img src="./images/Car.png" alt="" />
                             <div className="overlay">
                                 <div className="title">嘟嘟嘟</div>
                             </div>
@@ -78,7 +78,7 @@ function Gallery() {
 
 
                         <div className="grid-item">
-                            <img src="./Food.png" alt="" />
+                            <img src="./images/Food.png" alt="" />
                             <div className="overlay">
                                 <div className="title">泰饞記</div>
                             </div>
