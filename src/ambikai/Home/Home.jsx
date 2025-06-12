@@ -103,7 +103,7 @@ function Home() {
                             於是開始設計線上課程，將自己的經驗與方法整理出來，幫助更多人認識繪畫、享受創作的樂趣。
                             目前透過網站和線上課程，分享畫畫技巧，希望讓大家更輕易開始畫畫~</p>
 
-                        <button className="more-Aboutme">更多品牌故事</button>
+                        {/* <button className="more-Aboutme">更多品牌故事</button> */}
                     </div>
 
                     <div className="floating-fog">
@@ -115,15 +115,11 @@ function Home() {
                         <img src="./selfie.jpg" alt="畫家照片" className="selfie-pic" />
                     </div>
 
-                    {/* <div className="News">
-                        <p>📢 旅行繪畫展 7/5–7/21 Mania Artpace，限量手繪小卡送完為止！</p>
-                        <p>📢 繪畫課程開放報名中！早鳥報名享85折優惠，名額有限！</p>
-                        <p>📢 畫攤快閃登場！7/13・7/14 台北Cutton市集，限定手繪小品＆現場繪畫互動！</p>
 
-                    </div>  */}
                 </section>
 
                 <section className="Gallery">
+
                     <div className="Gallery-content">
                         <h4>作品 Gallery</h4>
                     </div>
@@ -193,10 +189,11 @@ function Home() {
                                             旅繪x希臘  <img src="./pointer.png" alt="" />
                                         </h3>
                                         <p className="card-description">自助希臘的旅程中，我用畫筆記錄著每一段海岸線與純白房舍的故事。從碧藍無垠的海面，到石階小巷中的斑駁牆面，每一處風景都有時間的印記，靜靜述說著歷史與生活的韻味。透過色彩與線條，我將這些美麗的瞬間化為永恆，讓希臘的光影和氣息，在畫布上生動綻放。</p>
+                                        <button className="Readmore" onClick={() => navigate("/Article")}>Read more&gt;&gt;</button>
                                     </div>
 
                                     <div className="card-date">
-                                        <p>2023/4/5 東京</p>
+                                        <p>2024/7/20 希臘</p>
                                     </div>
                                 </div>
 
@@ -207,17 +204,20 @@ function Home() {
 
                             <div className="notebook-card">
                                 <div className="card-image-wrapper">
-                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                    <img src="./Thailand.jpg" alt="記憶照片" className="card-image" />
                                 </div>
 
                                 <div className="card-content">
                                     <div className="card-note">
-                                        <h3 className="card-title">小日記標題</h3>
-                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+                                        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                            旅繪x泰國  <img src="./pointer.png" alt="" />
+                                        </h3>
+                                        <p className="card-description">這次去泰國一定要來鄭王廟走走，真的超有味道。那座金色的佛塔超級亮眼，拍照超美。我還帶著畫具，坐在廟裡一邊看風景一邊畫畫，捕捉那種光影和寧靜感，感覺整個旅行都更有靈魂了。這裡不只是個觀光景點，還能讓人心情放鬆，像是在跟這座城市深度聊天一樣。</p>
+                                        <button className="Readmore" onClick={() => navigate("/Article")}>Read more&gt;&gt;</button>
                                     </div>
 
                                     <div className="card-date">
-                                        <p>2023/4/5 東京</p>
+                                        <p>2024/8/20 泰國</p>
                                     </div>
                                 </div>
 
