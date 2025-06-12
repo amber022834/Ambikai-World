@@ -63,12 +63,12 @@ function Navbar() {
                 </li>
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Products")}>
-                    <span>旅繪筆記</span>
+                    <span>線上課程</span>
                   </button>
                 </li>
                 <li>
                   <button className="menu-link" onClick={() => handleNavigate("/Contact")}>
-                    <span>聯絡我</span>
+                    <span>旅繪筆記</span>
                   </button>
                 </li>
               </ul>

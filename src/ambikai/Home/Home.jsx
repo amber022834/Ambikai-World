@@ -15,7 +15,7 @@ function Home() {
 
             <main id="Herosection">
                 <div className="floatingPrince">
-                <img src="./images/prince.png" />
+                    <img src="./images/prince.png" />
                 </div>
 
                 {/* <div className="floatingCircle">
@@ -149,7 +149,7 @@ function Home() {
 
                     <div className="Onlineclass-content">
                         <h4>Ambikai的線上課程</h4>
-                        <p>目前有Procreate、色鉛筆、代針筆，輕鬆學畫畫，跟我一起創作吧！</p>
+                        <p>目前有Procreate、色鉛筆、代針筆課程，輕鬆學畫畫，跟我一起創作吧！</p>
                         <button className="more-Aboutme">查看課程</button>
                     </div>
 
@@ -271,7 +271,14 @@ function Home() {
                             </div> */}
                         </div>
                     </div>
+
+                    <div className="floating-line-article">
+                        <img src="./images/cloud-sky.png" alt="線條" />
+                    </div>
+
                 </section>
+
+                
 
 
 

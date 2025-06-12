@@ -34,7 +34,7 @@ function Footer() {
                             <h4>Explore</h4>
                             <p>關於我</p>
                             <p>作品集</p>
-                            <p>商品一覽</p>
+                            <p>線上課程</p>
                         </div>
 
                         <div className="Joinus">

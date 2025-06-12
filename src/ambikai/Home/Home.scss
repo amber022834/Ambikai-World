@@ -592,6 +592,7 @@
     gap: 20px;
     justify-content: center;
     margin-top: 5rem;
+    position: relative;
 
     .card-content {
       position: relative;
@@ -700,4 +701,27 @@
       }
     }
   }
+
+  .floating-line-article {
+    position: absolute;
+    right: -100px;
+    top: 60rem;
+    width: 300px;
+    height: 400px;
+    animation: floatRotate 5s ease-in-out infinite;
+    z-index: 40; // 確保浮動圈在最上層
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none;
+      filter: brightness(0.9);
+    }
+  }
+  
 }
