@@ -14,7 +14,7 @@ function Home() {
 
             <main id="Herosection">
                 <div className="floatingPrince">
-                    <img src="./prince.png" alt="" aria-hidden="true" />
+                <img src="/images/prince.png" />
                 </div>
 
                 {/* <div className="floatingCircle">
