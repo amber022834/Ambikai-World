@@ -12,10 +12,10 @@
     "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "predeploy": "npm run build"
-
-
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "cleave.js": "^1.6.0",
     "framer-motion": "^12.14.0",
     "jquery": "^3.7.1",

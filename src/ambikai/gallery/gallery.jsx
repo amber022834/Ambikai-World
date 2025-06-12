@@ -24,7 +24,7 @@ function Gallery() {
                     <div className="Gallery-intro">
                         <p><span>這些作品是在旅行途中創作的，靈感來自路上的風景與體驗。<br /> 走過不同的城市與角落，用筆記錄當下的感動。 <br />畫的不只是景色，更是旅途中自我對話的片段。
 
-</span></p>
+                        </span></p>
 
                     </div>
                 </section>
@@ -34,6 +34,7 @@ function Gallery() {
                     <div className="grid-container">
                         <div className="grid-item-wide">
                             <img src="./Tiger3031.png" alt="" />
+
                             <div className="overlay">
                                 <div className="title">稻埕X虎</div>
                             </div>

@@ -1,8 +1,9 @@
 import "./Home.scss";
 import ReactPlayer from "react-player";
 import { useNavigate } from 'react-router-dom';
-import Footer from '../Footer/Footer'
-
+import Footer from '../Footer/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpa } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
     // const { id } = useParams();
@@ -147,8 +148,13 @@ function Home() {
 
                 <section className="Article">
                     <div className="Article-content">
+                        <div className="planet-yellow">
+                            <img src="./planet-yellow.png" alt="" />
+                        </div>
                         <h4>旅繪筆記 Travel journels</h4>
                     </div>
+
+
 
                     <div>
                         <div class="card-container">
@@ -156,17 +162,71 @@ function Home() {
                                 <div className="card-image-wrapper">
                                     <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
                                 </div>
-                                <div className="card-note">
-                                    <h3 className="card-title">小日記標題</h3>
-                                    <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+
+                                <div className="card-content">
+                                    <div className="card-note">
+                                        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                            旅繪x東京  <img src="./pointer.png" alt="" />
+                                        </h3>
+
+                                        <p className="card-description">這趟東京旅行，就像拿著色鉛筆慢慢畫出眼前的風景。櫻花沒有華麗的濃彩，卻帶著淡淡的粉紅，像是在紙上輕輕暈開的顏色。每一片花瓣，每一陣微風，都被我細心地描繪成一幅柔和的畫。走在街頭巷尾，感覺自己像個畫家，用溫暖的筆觸紀錄下這座城市的春天，讓這些美好時刻能一直留存在心裡。</p>
+                                    </div>
+
+                                    <div className="card-date">
+                                        <p>2023/4/5 東京</p>
+                                    </div>
                                 </div>
+
+
+
+                            </div>
+
+                            <div className="notebook-card">
+                                <div className="card-image-wrapper">
+                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                </div>
+
+                                <div className="card-content">
+                                    <div className="card-note">
+                                        <h3 className="card-title">小日記標題</h3>
+                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+                                    </div>
+
+                                    <div className="card-date">
+                                        <p>2023/4/5 東京</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div className="notebook-card">
+                                <div className="card-image-wrapper">
+                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                </div>
+
+                                <div className="card-content">
+                                    <div className="card-note">
+                                        <h3 className="card-title">小日記標題</h3>
+                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+                                    </div>
+
+                                    <div className="card-date">
+                                        <p>2023/4/5 東京</p>
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
                 </section>
 
 
-                
+
 
                 <Footer />
 

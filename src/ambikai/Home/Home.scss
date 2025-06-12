@@ -476,80 +476,97 @@
     align-items: center;
     gap: 1rem;
     font-family: "Overpass Mono", sans-serif;
-  
+
     h4 {
       color: #caa18a;
       font-size: 20px;
       font-weight: 700;
       text-align: right;
     }
+
+    .planet-yellow{
+      align-self: flex-start;
+      width: 8rem;
+    }
   }
-  
+
   .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-  
+
     .notebook-card {
       width: 30rem;
       min-height: 20rem;
       background: url('https://www.transparenttextures.com/patterns/white-wall.png');
-      /* 紙張質感 */
-      background-color: #fdfcf8;
+      background-color: #fff8ec; /* 奶油米黃色，比之前更暖 */
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 18px rgba(204, 153, 102, 0.25); /* 暖橘色陰影，更柔和 */
       padding: 16px;
       display: flex;
       flex-direction: row;
-      gap: 12px;
+      gap: 16px;
       position: relative;
       font-family: "Segoe UI", "Helvetica", sans-serif;
       transition: transform 0.3s ease;
-  
-      &:hover {
-        transform: translateY(-4px);
+    }
+    
+
+    .notebook-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-image-wrapper {
+      flex: 1;
+      max-width: 50%;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      border: 2px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      transform: rotate(-2deg);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.05) contrast(0.85) saturate(0.85) sepia(0.08) blur(0.4px);
+      border-radius: 4px;
+      display: block;
+    }
+
+    .card-note {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #3b3b3b;
+      white-space: nowrap;
+
+      img{
+        width: 24px;
+        height: 30px;
       }
     }
-  
-  }
-  
-  
-  /* 照片像是貼上去 */
-  .card-image-wrapper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border: 2px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transform: rotate(-3deg);
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(1.05) contrast(0.85) saturate(0.85) sepia(0.08) blur(0.5px);
-  }
-  
-  /* 文字像手寫筆記 */
-  .card-note {
-    flex: 1;
-    margin-top: 8px;
-  }
-  
-  .card-title {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #3b3b3b;
-  }
-  
-  .card-description {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.4;
-  }
 
+   .card-description {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  
+  /* 多行省略 */
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* 限制顯示6行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
+  }
+}
