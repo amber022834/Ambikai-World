@@ -14,7 +14,7 @@ function Home() {
 
             <main id="Herosection">
                 <div className="floatingPrince">
-                <img src="/images/prince.png" />
+                    <img src="./prince.png" />
                 </div>
 
                 {/* <div className="floatingCircle">
@@ -127,16 +127,16 @@ function Home() {
                         <h4>作品 Gallery</h4>
                     </div>
 
-                    <div className="Gallery-artworks">
-                        <div className="spaceship-track">
-                            <img src="./spaceship.png" alt="飛行船" className="spaceship" />
-                            <div className="connector-line"></div>
-                            <div className="connector-line"></div>
-                            <img src="./Hualien.png" alt="圖1" className="trailing-image" />
-                            <img src="./Car.png" alt="圖2" className="trailing-image" />
-                            <img src="./Thailand.png" alt="圖3" className="trailing-image" />
-                        </div>
+                    <div class="spaceship-track">
+
+                        <div class="connector-line"></div>
+                        <img src="./Hualien.png" alt="圖1" class="trailing-image" />
+                        <img src="./Car.png" alt="圖2" class="trailing-image" />
+                        <img src="./Thailand.png" alt="圖3" class="trailing-image" />
+                        <button onClick={() => navigate("/gallery")}><img src="./spaceship.png" alt="飛行船" class="spaceship" />
+                        </button>
                     </div>
+
                 </section>
 
                 <section className="Article">

@@ -353,6 +353,8 @@
 //作品區
 .Gallery {
   margin-top: 10rem;
+  margin-bottom: 10rem;
+  height: 50vh;
 
   .Gallery-content {
     padding: 2rem;
@@ -374,43 +376,50 @@
     height: 25rem;
     overflow: hidden;
     position: relative;
-
-
-  
-    &:hover .spaceship-track {
-      animation-play-state: paused;
-    }
   }
-  
+
+  /* Pause animation on hover */
+  .Gallery-artworks:hover .spaceship-track {
+    animation-play-state: paused !important;
+  }
+
   .spaceship-track {
     display: flex;
     gap: 3rem;
     align-items: center;
     position: absolute;
-    left: -500px; 
-    animation: flyRight 18s linear infinite; // 變慢了
+    /* Start off-screen to the left */
+    left: -500px;
+    animation: flyRight 18s linear infinite;
   }
-  
+
+  /* 懸停時暫停動畫 */
+  .spaceship-track:hover {
+    animation-play-state: paused;
+  }
+
   .spaceship {
     width: 40rem;
     height: auto;
-    
+    /* Make the spaceship clickable */
+    cursor: pointer;
   }
-  
+
   .trailing-image {
     width: 20rem;
     height: auto;
+    cursor: pointer;
   }
-  
+
   @keyframes flyRight {
     0% {
       transform: translateX(0);
     }
+
+    /* Adjust this value based on your content and desired movement */
     100% {
-      transform: translateX(130vw); // 超出右邊螢幕
+      transform: translateX(calc(100vw + 500px));
+      /* Move past the right edge plus its initial offset */
     }
   }
-  
 }
-
-
