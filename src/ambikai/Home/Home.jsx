@@ -32,7 +32,7 @@ function Home() {
 
 
                     <div className="floatingCircle">
-                        <img src="/circle.png" alt="" aria-hidden="true" />
+                        <img src="./circle.png" alt="" aria-hidden="true" />
                     </div>
 
 
@@ -78,7 +78,7 @@ function Home() {
                     </div>
 
                     <div className="floating-line">
-                        <img src="/cloud-sky.png" alt="線條" />
+                        <img src="./cloud-sky.png" alt="線條" />
                     </div>
 
 
@@ -106,12 +106,12 @@ function Home() {
                     </div>
 
                     <div className="floating-fog">
-                        <img src="/sky-fog.png" alt="" />
+                        <img src="./sky-fog.png" alt="" />
                     </div>
 
                     <div className="selfie">
-                        <img src="/red-flower.png" alt="" className="red-flower" />
-                        <img src="/selfie.jpg" alt="畫家照片" className="selfie-pic" />
+                        <img src="./red-flower.png" alt="" className="red-flower" />
+                        <img src="./selfie.jpg" alt="畫家照片" className="selfie-pic" />
                     </div>
 
                     {/* <div className="News">
@@ -129,12 +129,12 @@ function Home() {
 
                     <div className="Gallery-artworks">
                         <div className="spaceship-track">
-                            <img src="/spaceship.png" alt="飛行船" className="spaceship" />
+                            <img src="./spaceship.png" alt="飛行船" className="spaceship" />
                             <div className="connector-line"></div>
                             <div className="connector-line"></div>
-                            <img src="/Hualien.png" alt="圖1" className="trailing-image" />
-                            <img src="/Car.png" alt="圖2" className="trailing-image" />
-                            <img src="/Thailand.png" alt="圖3" className="trailing-image" />
+                            <img src="./Hualien.png" alt="圖1" className="trailing-image" />
+                            <img src="./Car.png" alt="圖2" className="trailing-image" />
+                            <img src="./Thailand.png" alt="圖3" className="trailing-image" />
                         </div>
                     </div>
                 </section>
