@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./navbar.scss";
 
-function navbar() {
+function Navbar() {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false); // NEW: 是否捲動過
@@ -88,4 +88,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
