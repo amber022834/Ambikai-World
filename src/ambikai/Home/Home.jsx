@@ -278,7 +278,11 @@ function Home() {
 
                 </section>
 
-                
+
+                <section className="contact">
+
+                </section>
+
 
 
 
