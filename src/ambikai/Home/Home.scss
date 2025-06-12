@@ -460,64 +460,96 @@
 
 
 //文章區
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+
+.Article {
+
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  height: 50vh;
+
+
+
+  .Article-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Overpass Mono", sans-serif;
+  
+    h4 {
+      color: #caa18a;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: right;
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  
+    .notebook-card {
+      width: 30rem;
+      min-height: 20rem;
+      background: url('https://www.transparenttextures.com/patterns/white-wall.png');
+      /* 紙張質感 */
+      background-color: #fdfcf8;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      position: relative;
+      font-family: "Segoe UI", "Helvetica", sans-serif;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  
+  }
+  
+  
+  /* 照片像是貼上去 */
+  .card-image-wrapper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.05) contrast(0.85) saturate(0.85) sepia(0.08) blur(0.5px);
+  }
+  
+  /* 文字像手寫筆記 */
+  .card-note {
+    flex: 1;
+    margin-top: 8px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #3b3b3b;
+  }
+  
+  .card-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
 }
 
-.card {
-  width: 250px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: transform 0.3s ease;
-  position: relative;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 160px;
-  overflow: hidden;
-}
-
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(1.05) contrast(0.85) saturate(0.85) sepia(0.08) blur(0.5px);
-}
-
-/* 在 wrapper 上加 ::after 實現 overlay */
-.card-image-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(226, 217, 217, 0.3); /* 柔霧白遮罩 */
-  pointer-events: none;
-}
-
-.card-content {
-  padding: 16px;
-}
-
-.card-title {
-  font-size: 1.2rem;
-  margin: 0 0 8px;
-}
-
-.card-description {
-  font-size: 0.95rem;
-  color: #555;
-}

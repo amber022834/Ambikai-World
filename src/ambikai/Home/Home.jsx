@@ -128,7 +128,7 @@ function Home() {
                     </div>
 
                     <div class="spaceship-track">
-                       
+
                         <img src="./Hualien.png" alt="圖1" class="trailing-image" />
                         <img src="./Car.png" alt="圖2" class="trailing-image" />
                         <img src="./Thailand.png" alt="圖3" class="trailing-image" />
@@ -152,12 +152,13 @@ function Home() {
 
                     <div>
                         <div class="card-container">
-                            <div class="card">
-                            <div className="card-image-wrapper"> <img src="./tokyo-blossom.jpg" alt="圖片描述" class="card-image" /> </div>
-                               
-                                <div class="card-content">
-                                    <h3 class="card-title">卡牌標題</h3>
-                                    <p class="card-description">這裡是卡牌的簡短描述文字。</p>
+                            <div className="notebook-card">
+                                <div className="card-image-wrapper">
+                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                </div>
+                                <div className="card-note">
+                                    <h3 className="card-title">小日記標題</h3>
+                                    <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
                                 </div>
                             </div>
                         </div>
@@ -165,29 +166,7 @@ function Home() {
                 </section>
 
 
-                <section>
-                    <div className="bottom">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1002" height="2" viewBox="0 0 1002 2" fill="none">
-                            <path d="M1 1L1001 1" stroke="var(--dark, #3A2C19)" strokeWidth="2" strokeLinecap="round" />
-                        </svg>
-                        <div className="bottomcontent">
-                            <div className="hashtag">
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                                <p>#標籤</p>
-                            </div>
-
-                            {/* <div className="button">
-                                <button className="bottombutton" onClick={() => { navigate('/Allarticle'); window.scrollTo(0, 0); }}>←返回上一頁</button>
-                            </div> */}
-
-                        </div>
-
-                    </div>
-
-                </section>
+                
 
                 <Footer />
 
