@@ -29,7 +29,7 @@ export default function BacktoTop() {
             style={{ cursor: 'pointer' }}
         >
             <img
-                src="/images/fox.png"
+                src="./fox.png"
                 alt="Back to top"
                 style={{ width: '40px', height: '40px' }}
             />

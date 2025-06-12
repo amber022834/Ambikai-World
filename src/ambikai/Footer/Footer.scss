@@ -403,7 +403,7 @@ a {
     background-repeat: no-repeat;
     z-index: 1;
     background-position: top center;
-    background-image: url('/footer-2.png');
+    background-image: url('./images/footer-2.png');
 
 }
 
@@ -481,7 +481,7 @@ a {
 
 .Back-to-top-button {
     cursor: pointer;
-    background-image: url('/fox.png');
+    background-image: url('./images/fox.png');
     /* 相對於網站根目錄的路徑 */
     background-size: cover;
     background-repeat: no-repeat;
@@ -541,7 +541,7 @@ a {
     // }
 
     .chatbubble {
-        background-image: url('/chat-bubble.png'); // ✅ 正確路徑
+        background-image: url('./images/chat-bubble.png'); // ✅ 正確路徑
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
