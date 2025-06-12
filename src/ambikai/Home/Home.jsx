@@ -107,7 +107,9 @@ function Home() {
                     </div>
 
                     <div className="floating-fog">
-                        <img src="./sky-fog.png" alt="" />
+                        <img src="你的圖片路徑" alt="fog" />
+                        <span className="dot1"></span>
+                        <span className="dot2"></span>
                     </div>
 
                     <div className="selfie">
@@ -141,6 +143,23 @@ function Home() {
                     </div>
 
                 </section>
+
+                <section className="Onlineclass" >
+
+
+                    <div className="Onlineclass-content">
+                        <h4>Ambikai的線上課程</h4>
+                        <p>目前有Procreate、色鉛筆、代針筆，輕鬆學畫畫，跟我一起創作吧！</p>
+                        <button className="more-Aboutme">查看課程</button>
+                    </div>
+
+                    <div className="floating-fog">
+                        <img src="./sky-fog.png" alt="" />
+                    </div>
+
+
+                </section>
+
 
                 <section className="Article">
                     <div className="Article-content">
@@ -193,7 +212,7 @@ function Home() {
                                     </div>
 
                                     <div className="card-date">
-                                        <p>2024/7/20 希臘</p>
+                                        <p>2024/7/20 米克諾斯</p>
                                     </div>
                                 </div>
 
@@ -217,7 +236,7 @@ function Home() {
                                     </div>
 
                                     <div className="card-date">
-                                        <p>2024/8/20 泰國</p>
+                                        <p>2024/8/20 曼谷</p>
                                     </div>
                                 </div>
 
@@ -225,17 +244,20 @@ function Home() {
 
                             <div className="notebook-card">
                                 <div className="card-image-wrapper">
-                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                    <img src="./Hualien-beach.jpg" alt="記憶照片" className="card-image" />
                                 </div>
 
                                 <div className="card-content">
                                     <div className="card-note">
-                                        <h3 className="card-title">小日記標題</h3>
-                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+                                        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                            旅繪x台灣  <img src="./pointer.png" alt="" />
+                                        </h3>
+                                        <p className="card-description">一路搭車到花蓮，藍天白雲、山海相伴，每一個角落都超級美。我帶著畫具，找了個安靜的海邊坐下，慢慢用筆記錄眼前的海浪和山巒，感覺像把旅程變成一幅幅獨一無二的畫作。花蓮的自然風光和純樸的人情味，讓我畫畫的靈感源源不絕。</p>
+                                        <button className="Readmore" onClick={() => navigate("/Article")}>Read more&gt;&gt;</button>
                                     </div>
 
                                     <div className="card-date">
-                                        <p>2023/4/5 東京</p>
+                                        <p>2025/4/28 花蓮</p>
                                     </div>
                                 </div>
 
