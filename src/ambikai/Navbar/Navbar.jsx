@@ -31,9 +31,13 @@ function Navbar() {
       <div className="container">
         
         {/* 左邊 Logo */}
-        <button className="logo" onClick={() => navigate("/")}>
-          <img src="./Logo.png" alt="Logo" />
+        <div className="logo-content">
+           <button className="logo" onClick={() => navigate("/")}>
+          <img src="./Logo.png" alt="回首頁" />        
         </button>
+        {/* <button className="logo-chinese" onClick={() => navigate("/")} >旅繪筆記</button> */}
+        </div>
+       
 
         {/* 右邊 展開選單 + Log in */}
         <div className="rightControls">

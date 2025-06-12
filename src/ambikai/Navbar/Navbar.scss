@@ -29,7 +29,46 @@
   justify-content: space-between;
   align-items: center;
 
+  .logo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 
+    // .logo-chinese {
+    //   border: none;
+    //   background: transparent;
+    //   cursor: pointer;
+    //   color: #887e78;
+    //   font-family: "Overpass Mono", sans-serif;
+    //   font-size: 16px;
+    //   position: relative;
+    //   display: inline-block;
+    //   padding: 0 16px;
+    // }
+    
+    // .logo-chinese::before,
+    // .logo-chinese::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 50%;
+    //   width: 40px; /* 控制線條長度 */
+    //   height: 2px;
+    //   background-color: #ccc;
+    // }
+    
+    // .logo-chinese::before {
+    //   left: 0;
+    //   transform: translateX(-100%);
+    // }
+    
+    // .logo-chinese::after {
+    //   right: 0;
+    //   transform: translateX(100%);
+    // }
+    
+  }
 
 
   .logo {
@@ -42,6 +81,7 @@
       height: auto;
       display: block;
     }
+
   }
 
   .rightControls {
@@ -97,7 +137,7 @@
           width: 110px;
           padding: 12px 24px;
           font-size: 16px;
-          
+
           color: #656565;
           border: none;
           background-color: transparent;
@@ -138,7 +178,7 @@
             position: relative;
             z-index: 1;
             transition: all 0.3s ease;
-            font-family: "Overpass Mono", sans-serif; 
+            font-family: "Overpass Mono", sans-serif;
             font-weight: 400;
           }
 

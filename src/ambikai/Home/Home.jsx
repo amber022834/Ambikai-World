@@ -14,7 +14,7 @@ function Home() {
 
             <main id="Herosection">
                 <div className="floatingPrince">
-                    <img src="/prince.png" alt="" />
+                    <img src="/prince.png" alt="" aria-hidden="true" />
                 </div>
 
                 {/* <div className="floatingCircle">
@@ -23,25 +23,25 @@ function Home() {
 
 
                 {/* <!-- 介紹區 --> */}
-                <section className="Aboutme">
+                <section className="Herosection">
 
                     <div className="slogan">
-                        <h4>Ambikai's World</h4>
-                        <p>踏出舒適圈，讓世界變成你的畫布</p>
+                        <h4>Ambikai's World 旅繪筆記</h4>
+                        <p>畫畫x教學x探索世界</p>
                     </div>
 
 
                     <div className="floatingCircle">
-                        <img src="/circle.png" alt="" />
+                        <img src="/circle.png" alt="" aria-hidden="true" />
                     </div>
 
-                   
+
 
                     <div className="video-wrapper"
                         style={{
                             position: 'relative',
                             width: '100%',        // 寬度改成 50%
-                            height: '10rem',
+                            height: '40rem',
                             paddingBottom: '30%', // 16:9 比例
                             margin: '0 auto 0 auto'
                         }}
@@ -77,35 +77,59 @@ function Home() {
                         />
                     </div>
 
-                     <div className="floating-line">
-                        <img src="/cloud-sky.png" alt="" />
+                    <div className="floating-line">
+                        <img src="/cloud-sky.png" alt="線條" />
                     </div>
 
-                    {/* <div className="floating-fog">
-                        <img src="/sky-fog.png" alt="" />
-                    </div> */}
+
+
+                    <div class="wave-to-aboutme">
+                        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+                            <path d="M0,96 C360,0 1080,180 1440,96 L1440,0 L0,0 Z" fill="#FFF5DF" />
+                        </svg>
+                    </div>
+                </section>
 
 
 
-
-
-
-
-                    {/* <div className="Aboutme-content">
+                <section className="Aboutme">
+                    <div className="Aboutme-content">
                         <h4>關於我 About me</h4>
-                        <p>Ambikai是一位熱愛旅行的繪畫者，用畫筆捕捉世界各地的美景與人文故事，將旅途中的感動化作獨特畫作，分享給每一位喜愛藝術與冒險的朋友。</p>
+                        <p>我從小就喜歡畫畫，一開始只是興趣，
+                            一路畫到出社會後，發現繪畫成為生活中不可或缺的部分。
+                            後來在一邊旅行一邊畫畫的過程中，決定轉職全職畫家，把熱愛的事變成每天都在做的工作！
+                            在創作的過程中，我也發現，分享繪畫經歷也是有趣的事。
+                            於是開始設計線上課程，將自己的經驗與方法整理出來，幫助更多人認識繪畫、享受創作的樂趣。
+                            目前透過網站和線上課程，分享畫畫技巧，希望讓大家更輕易開始畫畫~</p>
+
+                        <button className="more-Aboutme">更多品牌故事</button>
                     </div>
 
-                    <div className="News">
+                    <div className="floating-fog">
+                        <img src="/sky-fog.png" alt="" />
+                    </div>
+
+                    <div className="selfie">
+                        <img src="/red-flower.png" alt="" className="red-flower" />
+                        <img src="/selfie.jpg" alt="畫家照片" className="selfie-pic" />
+                    </div>
+
+                    {/* <div className="News">
                         <p>📢 旅行繪畫展 7/5–7/21 Mania Artpace，限量手繪小卡送完為止！</p>
                         <p>📢 繪畫課程開放報名中！早鳥報名享85折優惠，名額有限！</p>
                         <p>📢 畫攤快閃登場！7/13・7/14 台北Cutton市集，限定手繪小品＆現場繪畫互動！</p>
 
-                    </div> */}
+                    </div>  */}
                 </section>
 
                 <section className="Gallery">
-                    <h2>作品區</h2>
+                    <div className="Gallery-content">
+                        <h4>作品 Gallery</h4>
+                    </div>
+
+                    <div className="Gallery-artworks">
+                        <img src="/spaceship.png" alt="" />
+                    </div>
                 </section>
 
                 <section className="Article">
