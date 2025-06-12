@@ -4,7 +4,7 @@ import Home from "./Home/Home";
 import Aboutme from './Aboutme/Aboutme';
 import Contact from './Contact/Contact';
 import Gallery from './Gallery/Gallery';
-import Products from './Products/Products';
+import Article from './Article/Article';
 // import Footer from './Footer/Footer';
 import ScrollToTop from "../component/ScrollToTop";
 // import BacktoTop from '../component/BacktoTop'
@@ -21,8 +21,8 @@ function App() {
           <Route path="/Aboutme" element={<Aboutme />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Products" element={<Products />} />
-          <Route path="/Products" element={<Products />} />
+          <Route path="/Article" element={<Article />} />
+          
         </Routes>
     
       </div>

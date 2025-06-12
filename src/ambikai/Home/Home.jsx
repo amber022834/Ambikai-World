@@ -169,7 +169,8 @@ function Home() {
                                             旅繪x東京  <img src="./pointer.png" alt="" />
                                         </h3>
 
-                                        <p className="card-description">這趟東京旅行，就像拿著色鉛筆慢慢畫出眼前的風景。櫻花沒有華麗的濃彩，卻帶著淡淡的粉紅，像是在紙上輕輕暈開的顏色。每一片花瓣，每一陣微風，都被我細心地描繪成一幅柔和的畫。走在街頭巷尾，感覺自己像個畫家，用溫暖的筆觸紀錄下這座城市的春天，讓這些美好時刻能一直留存在心裡。</p>
+                                        <p className="card-description">這趟東京旅行，我拿著色鉛筆慢慢畫出眼前的風景。櫻花沒有濃彩，卻帶著淡淡的粉紅，像是在紙上輕輕暈開的顏色。每一片花瓣，每一陣微風，都被我細心地描繪成一幅柔和的畫。走在街頭巷尾，感覺自己像個畫家，用溫暖的筆觸紀錄下這座城市的春天，讓這些美好時刻能一直留存在心裡。</p>
+                                        <button className="Readmore" onClick={() => navigate("/Article")}>Read more&gt;&gt;</button>
                                     </div>
 
                                     <div className="card-date">
@@ -178,6 +179,47 @@ function Home() {
                                 </div>
 
 
+
+                            </div>
+
+                            <div className="notebook-card">
+                                <div className="card-image-wrapper">
+                                    <img src="./Greece.jpg" alt="記憶照片" className="card-image" />
+                                </div>
+
+                                <div className="card-content">
+                                    <div className="card-note">
+                                        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                            旅繪x希臘  <img src="./pointer.png" alt="" />
+                                        </h3>
+                                        <p className="card-description">自助希臘的旅程中，我用畫筆記錄著每一段海岸線與純白房舍的故事。從碧藍無垠的海面，到石階小巷中的斑駁牆面，每一處風景都有時間的印記，靜靜述說著歷史與生活的韻味。透過色彩與線條，我將這些美麗的瞬間化為永恆，讓希臘的光影和氣息，在畫布上生動綻放。</p>
+                                    </div>
+
+                                    <div className="card-date">
+                                        <p>2023/4/5 東京</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div className="notebook-card">
+                                <div className="card-image-wrapper">
+                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
+                                </div>
+
+                                <div className="card-content">
+                                    <div className="card-note">
+                                        <h3 className="card-title">小日記標題</h3>
+                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
+                                    </div>
+
+                                    <div className="card-date">
+                                        <p>2023/4/5 東京</p>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -197,30 +239,14 @@ function Home() {
                                     </div>
                                 </div>
 
-
-
                             </div>
 
 
-                            <div className="notebook-card">
-                                <div className="card-image-wrapper">
-                                    <img src="./tokyo-blossom.jpg" alt="記憶照片" className="card-image" />
-                                </div>
-
-                                <div className="card-content">
-                                    <div className="card-note">
-                                        <h3 className="card-title">小日記標題</h3>
-                                        <p className="card-description">這是一段關於日常的筆記式描述，像是寫在筆記本的一頁。</p>
-                                    </div>
-
-                                    <div className="card-date">
-                                        <p>2023/4/5 東京</p>
-                                    </div>
-                                </div>
 
 
-
-                            </div>
+                            {/* <div className="floatingCircle">
+                                <img src="./circle.png" alt="" aria-hidden="true" />
+                            </div> */}
                         </div>
                     </div>
                 </section>

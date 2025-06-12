@@ -1,7 +1,7 @@
 
-import "./Products.scss";
+import "./Article.scss";
 
-function Products() {
+function Article() {
   return (
     <>
       <main id="Products">
@@ -26,4 +26,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Article;
