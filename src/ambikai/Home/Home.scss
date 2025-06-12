@@ -370,10 +370,43 @@
   }
 
   .Gallery-artworks {
-    img {
-      width: 30rem;
-      height: 20rem;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 
+  
+    &:hover .spaceship-track {
+      animation-play-state: paused;
     }
   }
+  
+  .spaceship-track {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    position: absolute;
+    left: -500px; 
+    animation: flyRight 18s linear infinite; // 變慢了
+  }
+  
+  .spaceship {
+    width: 40rem;
+    height: auto;
+  }
+  
+  .trailing-image {
+    width: 20rem;
+    height: auto;
+  }
+  
+  @keyframes flyRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(130vw); // 超出右邊螢幕
+    }
+  }
+  
 }
