@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpa } from '@fortawesome/free-solid-svg-icons';
 
-function Home() {
+function home() {
     // const { id } = useParams();
     // const article = cardsData.find(card => card.id === id); 
     const navigate = useNavigate();
@@ -303,4 +303,4 @@ function Home() {
         </>
     )
 }
-export default Home
+export default home

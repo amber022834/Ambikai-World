@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar/Navbar";
-import Home from "./Home/Home";
-import Aboutme from './Aboutme/Aboutme';
-import Contact from './Contact/Contact';
-import Gallery from './Gallery/Gallery';
-import Article from './Article/Article';
+import Navbar from "./navbar";
+import Home from "./home";
+import Aboutme from './Aboutme';
+import Contact from './Contact';
+import Gallery from './Gallery';
+import Article from './Article';
 // import Footer from './Footer/Footer';
 import ScrollToTop from "../component/ScrollToTop";
 // import BacktoTop from '../component/BacktoTop'
@@ -15,9 +15,9 @@ function App() {
     <>
       <ScrollToTop />
       <div className="wrap">
-        <Navbar />
+        <Navbar/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/Aboutme" element={<Aboutme />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Gallery" element={<Gallery />} />
