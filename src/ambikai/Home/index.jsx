@@ -18,9 +18,9 @@ function Home() {
                     <img src="./images/prince.png" />
                 </div>
 
-                {/* <div className="floatingCircle">
-                    <img src="/circle.png" alt="" />
-                </div> */}
+                <div className="floatingCircle">
+                    <img src="./images/circle.png" alt="" />
+                </div>
 
 
                 {/* <!-- 介紹區 --> */}
