@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./navbar";
-import Home from "./Home";
-import Aboutme from './Aboutme';
-import Contact from './Contact';
-import Gallery from './Gallery';
-import Article from './Article';
+import Home from "./home";
+import Aboutme from './aboutme';
+import Contact from './contact';
+import Gallery from './gallery';
+import Article from './article';
 // import Footer from './Footer/Footer';
 import ScrollToTop from "../component/ScrollToTop";
 // import BacktoTop from '../component/BacktoTop'
